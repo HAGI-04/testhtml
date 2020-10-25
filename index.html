@@ -1,74 +1,49 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Progate</title>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Form内容のファイル出力ツール</title>
     <link rel="stylesheet" href="https://hagi-04.github.io/testhtml/stylesheet.css">
-  </head>
-  <body>
-    <div class="header">
-      <div class="header-logo">Progate</div>
-      <div class="header-list">
-        <ul>
-          <li>プログラミングとは</li>
-          <li>学べるレッスン</li>
-          <li>お問い合わせ</li>
-        </ul>
-      </div>
-    </div>
+    <h1>Form内容のファイル出力ツール</h1>
+    <script>
+        function dispText() {
+            var text = "'" +
+                document.formname.a001.value + "','" +
+                document.formname.a002.value + "','" +
+                document.formname.a003.value + "','" +
+                document.formname.a004.value + "','" +
+                document.formname.a005.value + "'";
+            var blob = new Blob([text], { "type": "text/plain" });
 
-    <div class="main">
-      <div class="copy-container">
-        <h1>HELLO WORLD<span>.</span></h1>
-        <h2>プログラミングの世界へようこそ</h2>
-      </div>
-      
-      <div class="contents">
-        <h3 class="section-title">学べるレッスン</h3>
-        <div class="contents-item">
-          <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/html.svg">
-          <p>HTML & CSS</p>
-        </div>
-        <div class="contents-item">
-          <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/php.svg">
-          <p>PHP</p>
-        </div>
-        <div class="contents-item">
-          <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/ruby.svg">
-          <p>Ruby</p>
-        </div>
-        <div class="contents-item">
-          <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/swift.svg">
-          <p>Swift</p>
-        </div>
-      </div>
-      
-      <div class="contact-form">
-        <h3 class="section-title">お問い合わせ</h3>
-        <p>メールアドレス（必須）</p>
-        <!-- <input>要素を追加してください -->
-        <input>
-        
-        <p>お問い合わせ内容（必須）</p>
-        <!-- <textarea>要素を追加してください -->
-        <textarea></textarea>
-        
-        <p>※必須項目は必ずご入力ください</p>
-        <!-- <input>要素を追加してください -->
-        <input class="contact-submit" type="submit">
-        
-      </div>
-    </div>
+            //IEの場合
+            if (window.navigator.msSaveBlob) {
+                window.navigator.msSaveBlob(blob, "outFileFromWindows.txt");
+                //IE以外の場合
+            } else {
+                document.getElementById("createFile").href = window.URL.createObjectURL(blob);
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="formname" id="id_form" action="">
+        <label id="001">Form1 : </label>
+        <input type="text" name="a001" size="30" maxlenglabel="30" value="">
+        </br>
+        <label id="002">Form2 : </label>
+        <input type="text" name="a002" size="30" maxlenglabel="30" value="">
+        </br>
+        <label id="003">Form3 : </label>
+        <input type="text" name="a003" size="30" maxlenglabel="30" value="">
+        </br>
+        <label id="004">Form4 : </label>
+        <input type="text" name="a004" size="8" maxlenglabel="8" value="">
+        </br>
+        <label id="005">Form5 : </label>
+        <input type="text" name="a005" size="30" maxlenglabel="30" value="">
+        </br>
 
-    <div class="footer">
-      <div class="footer-logo">Progate</div>
-      <div class="footer-list">
-        <ul>
-          <li>会社概要</li>
-          <li>採用</li>
-          <li>お問い合わせ</li>
-        </ul>
-      </div>
-    </div>
-  </body>
+        <a id="createFile" href="#" download="outFile.txt" value="ファイル作成" onclick="dispText()">ファイル作成</a>
+    </form>
+</body>
 </html>
