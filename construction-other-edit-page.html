@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>LO技術ツリー習得情報管理</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body onload="checkboxInitialize();">
+
+  <div class="header">
+    <div class="header-logo"><a href="main-page.html">FFFFFF</a></div>
+    <div class="header-list">
+      <ul>
+        <li><a href="select-page.html">技術取得情報編集</a></li>
+        <li><a href="show-page.html">技術習得情報参照</a></li>
+        <li><a href="#">同盟関係(WIP)</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="container">
+
+      <div class="wrapper3">
+        <a class="button submit-data" href="#" onclick="submitTreeData()">適用</a>
+        <input type="hidden" id="type" value="construction-other">
+      </div>
+
+      <div class="grid-container">
+
+        <!--1列目-->
+        <!--砂のベッド-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Sandbed.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Sandbed"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">?</div>
+          <div class="item box-big2">砂のベッド</div>
+        </div>
+
+        <!--ハンモック-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Hammock.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Hammock"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">25</div>
+          <div class="item box-big2">ハンモック</div>
+        </div>
+
+        <!--ベッド-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Bed.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Bed"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">50</div>
+          <div class="item box-big2">ベッド</div>
+        </div>
+        <div class="line-end3"></div>
+
+        <!--2列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line3.png"></div>
+        <!--スモールチェスト-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Small_Chest.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Small_Chest"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">6</div>
+          <div class="item box-big2">スモールチェスト</div>
+        </div>
+
+        <!--中型の宝箱-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Medium_Chest.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Medium_Chest"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">15</div>
+          <div class="item box-big2">中型の宝箱</div>
+        </div>
+
+        <!--大きな宝箱-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Large_Chest.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Large_Chest"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big2">大きな宝箱</div>
+        </div>
+
+        <!--巨大な宝箱-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Gigantic_Chest.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Gigantic_Chest"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">5</div>
+          <div class="item box-big2">巨大な宝箱</div>
+        </div>
+        <div class="line-end5"></div>
+
+        <!--3列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line1.png"></div>
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line3.png"></div>
+        <!--小さな水の袋-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Small_Water_Bag.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Small_Water_Bag"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">6</div>
+          <div class="item box-big2">小さな水の袋</div>
+        </div>
+
+        <!--中程度の容量の液体容器-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Medium_Liquid_Container.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Medium_Liquid_Container"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big2">中程度の容量の液体容器</div>
+        </div>
+
+        <!--大きな水の容器-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Large_Water_Container.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Large_Water_Container"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big2">大きな水の容器</div>
+        </div>
+
+        <!--OBSIDIAN CANISTER-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Obsidian_Canister.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Obsidian_Canister"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">6</div>
+          <div class="item box-big2">OBSIDIAN CANISTER</div>
+        </div>
+        <div class="line-end6"></div>
+
+        <!--4列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line1.png"></div>
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line1.png"></div>
+        <div></div>
+        <div></div>
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line2.png"></div>
+        <!--OBSIDIAN POT-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Obsidian_Pot.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Obsidian_Pot"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">3</div>
+          <div class="item box-big2">OBSIDIAN POT</div>
+        </div>
+        <div class="line-end6"></div>
+
+        <!--5列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line1.png"></div>
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line2.png"></div>
+        <!--弾薬箱-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Ammo_Chest.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Ammo_Chest"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big2">弾薬箱</div>
+        </div>
+        <div class="line-end3"></div>
+
+        <!--6列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line3.png"></div>
+        <!--クランフラッグ-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/ClanFlag.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="ClanFlag"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">25</div>
+          <div class="item box-big2">クランフラッグ</div>
+        </div>
+
+        <!--BASKET TALL-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Basket_Tall.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Basket_Tall"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">40</div>
+          <div class="item box-big2">BASKET TALL</div>
+        </div>
+        <div class="line-end3"></div>
+
+        <!--7列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line1.png"></div>
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line3.png"></div>
+        <!--CARPET LIGHT-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Carpet_Light.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Carpet_Light"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">40</div>
+          <div class="item box-big2">CARPET LIGHT</div>
+        </div>
+        <div class="line-end3"></div>
+
+        <!--8列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line1.png"></div>
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line3.png"></div>
+        <!--CHAIR SIMPLE-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Chair_Simple.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Chair_Simple"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">40</div>
+          <div class="item box-big2">CHAIR SIMPLE</div>
+        </div>
+
+        <!--CHAIR THRONE-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Chair_Throne.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Chair_Throne"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">3</div>
+          <div class="item box-big2">CHAIR THRONE</div>
+        </div>
+        <div class="line-end4"></div>
+
+        <!--9列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line1.png"></div>
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line1.png"></div>
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line2.png"></div>
+        <!--CHAIR COMFORTABLE-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Chair_Comfortable.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Chair_Comfortable"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big2">CHAIR COMFORTABLE</div>
+        </div>
+        <div class="line-end4"></div>
+
+        <!--10列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line1.png"></div>
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line3.png"></div>
+        <!--LAMP STANDING-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Lamp_Standing.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Lamp_Standing"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">40</div>
+          <div class="item box-big2">LAMP STANDING</div>
+        </div>
+
+        <!--FIRE GOBLET-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Fire_Goblet.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Fire_Goblet"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big2">FIRE GOBLET</div>
+        </div>
+        <div class="line-end4"></div>
+
+        <!--11列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line1.png"></div>
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line1.png"></div>
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line3.png"></div>
+        <!--LAMP DOUBLE HANGING-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Lamp_Double_Hanging.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Lamp_Double_Hanging"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">40</div>
+          <div class="item box-big2">LAMP DOUBLE HANGING</div>
+        </div>
+        <div class="line-end4"></div>
+
+        <!--12列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line1.png"></div>
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line1.png"></div>
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line2.png"></div>
+        <!--LAMP OVERHANGING-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Lamp_Overhanging.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Lamp_Overhanging"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">40</div>
+          <div class="item box-big2">LAMP OVERHANGING</div>
+        </div>
+        <div class="line-end4"></div>
+
+        <!--13列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line1.png"></div>
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line2.png"></div>
+        <!--TABLE-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Table.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Table"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big2">TABLE</div>
+        </div>
+        <div class="line-end3"></div>
+
+        <!--14列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line2.png"></div>
+        <!--砂袋の土台-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Sandbag_Wall.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Sandbag_Wall"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">9</div>
+          <div class="item box-big2">砂袋の土台</div>
+        </div>
+
+        <!--石の土台-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Sandbag_Wall.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Stone_Wall"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">?</div>
+          <div class="item box-big2">石の土台</div>
+        </div>
+
+        <!--粘土の土台-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Clay_Wall.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Clay_Wall"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">8</div>
+          <div class="item box-big2">粘土の土台</div>
+        </div>
+
+        <!--CEMENT BASE-->
+        <div class="content">
+            <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Cement_Wall_1.png" width="80"
+                height="80"></div>
+            <div class="item"><input type="checkbox" name="learned" value="Cement_Wall"></div>
+            <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+            </div>
+            <div class="item">5</div>
+            <div class="item box-big2">CEMENT BASE</div>
+          </div>
+        <div class="line-end5"></div>
+
+        <!--15列目-->
+        <div></div>
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line2.png"></div>
+        <!--軽量な木製の土台-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Light_Wood_Wall.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Light_Wood_Wall"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big2">軽量な木製の土台</div>
+        </div>
+
+        <!--中型の木の壁-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Medium_Wood_Wall.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Medium_Wood_Wall"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">35</div>
+          <div class="item box-big2">中型の木の壁</div>
+        </div>
+
+        <!--重厚な木製の土台-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Heavy_Wood_Wall_1.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Heavy_Wood_Wall_1"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big2">重厚な木製の土台</div>
+        </div>
+        <div class="line-end5"></div>
+
+        <!--16列目-->
+        <div></div>
+        <div></div>
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line3.png"></div>
+        <!--バリアベース-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Barrier_Base.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Barrier_Base"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">20</div>
+          <div class="item box-big2">バリアベース</div>
+        </div>
+        <div class="line-end4"></div>
+
+        <!--17列目-->
+        <div></div>
+        <div></div>
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line3.png"></div>
+        <!--防御用タワー-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Defensive_Tower.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Defensive_Tower"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">40</div>
+          <div class="item box-big2">防御用タワー</div>
+        </div>
+        <div class="line-end4"></div>
+
+        <!--18列目-->
+        <div></div>
+        <div></div>
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line2.png"></div>
+        <!--RUPUのスリング-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Rupu_Sling.png" width="80"
+              height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Rupu_Sling"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">50</div>
+          <div class="item box-big2">RUPUのスリング</div>
+        </div>
+        <div class="line-end4"></div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

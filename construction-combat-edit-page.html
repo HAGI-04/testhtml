@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>LO技術ツリー習得情報管理</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body onload="checkboxInitialize();">
+
+  <div class="header">
+    <div class="header-logo"><a href="main-page.html">FFFFFF</a></div>
+    <div class="header-list">
+      <ul>
+        <li><a href="select-page.html">技術取得情報編集</a></li>
+        <li><a href="show-page.html">技術習得情報参照</a></li>
+        <li><a href="#">同盟関係(WIP)</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="container">
+
+      <div class="wrapper3">
+        <a class="button submit-data" href="#" onclick="submitTreeData()">適用</a>
+        <input type="hidden" id="type" value="construction-combat">
+      </div>
+
+      <div class="grid-container">
+
+        <!--1列目-->
+        <!--バリスタ-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Ballista.png" width="80" height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Ballista"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big2">バリスタ</div>
+        </div>
+
+        <!--遠隔バリスタ-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Remote_Ballista.png" width="80" height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Remote_Ballista"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big2">遠隔バリスタ</div>
+        </div>
+        <div class="line-end2"></div>
+
+        <!--2列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line3.png"></div>
+        <!--フリントのボルト-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Flint_Bolt.png" width="80" height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Flint_Bolt"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big2">フリントのボルト</div>
+        </div>
+
+        <!--骨のボルト-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Bone_Bolt.png" width="80" height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Bone_Bolt"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">20</div>
+          <div class="item box-big2">骨のボルト</div>
+        </div>
+
+        <!--セラミックチップのボルト-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Ceramic-Tipped_Bolt.png" width="80" height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Ceramic-Tipped_Bolt"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big2">セラミックチップのボルト</div>
+        </div>
+
+        <!--EXPLOSIVE BOLT-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Explosive_Bolt.png" width="80" height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Explosive_Bolt"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">8</div>
+          <div class="item box-big2">EXPLOSIVE BOLT</div>
+        </div>
+        <div class="line-end5"></div>
+
+        <!--3列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line1.png"></div>
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line1.png"></div>
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line2.png"></div>
+        <!--先端が鉄製のボルト-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Iron-Tipped_Bolt.png" width="80" height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Iron-Tipped_Bolt"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">3</div>
+          <div class="item box-big2">先端が鉄製のボルト</div>
+        </div>
+        <div class="line-end4"></div>
+
+        <!--4列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line1.png"></div>
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line2.png"></div>
+        <!--火のボルト-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Fire_Bolt.png" width="80" height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Fire_Bolt"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big2">火のボルト</div>
+        </div>
+
+        <!--業火のボルト-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Hellfire_Bolt.png" width="80" height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Hellfire_Bolt"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">20</div>
+          <div class="item box-big2">業火のボルト</div>
+        </div>
+        <div class="line-end4"></div>
+
+        <!--5列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line3.png"></div>
+        <!--リピーター-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Repeater.png" width="80" height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Repeater"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">35</div>
+          <div class="item box-big2">リピーター</div>
+        </div>
+
+        <!--EXPLOSIVE DART-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Explosive_Dart.png" width="80" height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Explosive_Dart"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big2">EXPLOSIVE DART</div>
+        </div>
+        <div class="line-end3"></div>
+
+        <!--6列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line1.png"></div>
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line2.png"></div>
+        <!--FROATING MINE-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/No_Image.png" width="80" height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Froating_Mine"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big2">FROATING MINE</div>
+        </div>
+        <div class="line-end3"></div>
+
+        <!--7列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line3.png"></div>
+        <!--スキャッターショット・ガン-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Scattershot_Gun.png" width="80" height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Scattershot_Gun"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">28</div>
+          <div class="item box-big2">スキャッターショット・ガン</div>
+        </div>
+
+        <!--スキャッターショット-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Scattershot.png" width="80" height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Scattershot"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">5</div>
+          <div class="item box-big2">スキャッターショット</div>
+        </div>
+
+        <!--ハルブレーカー・スキャッターショット-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Hullbreaker_Scattershot.png" width="80" height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Hullbreaker_Scattershot"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">20</div>
+          <div class="item box-big2">ハルブレーカー・スキャッターショット</div>
+        </div>
+        <div class="line-end4"></div>
+
+        <!--8列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line3.png"></div>
+        <!--スリングショット-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Slingshot.png
+            " width="80" height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Slingshot"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">2</div>
+          <div class="item box-big2">スリングショット</div>
+        </div>
+
+        <!--カタパルト-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Catapult.png" width="80" height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Catapult"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">4</div>
+          <div class="item box-big2">カタパルト</div>
+        </div>
+
+        <!--ハルブレーカー・ロック-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Hullbreaker_Rock.png" width="80" height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Hullbreaker_Rock"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">40</div>
+          <div class="item box-big2">ハルブレーカー・ロック</div>
+        </div>
+        <div class="line-end4"></div>
+
+        <!--9列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line1.png"></div>
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line3.png"></div>
+        <!--ファイアボム-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Fire_Bomb.png" width="80" height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Fire_Bomb"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">3</div>
+          <div class="item box-big2">ファイアボム</div>
+        </div>
+        <div class="line-end3"></div>
+
+        <!--10列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line1.png"></div>
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line2.png"></div>
+        <!--緑のデスボム-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Green_Death_Bomb.png" width="80" height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Green_Death_Bomb"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big2">緑のデスボム</div>
+        </div>
+
+        <!--窒息の雲-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Choking_Cloud.png" width="80" height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Choking_Cloud"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big2">窒息の雲</div>
+        </div>
+        <div class="line-end4"></div>
+
+        <!--11列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line1.png"></div>
+        <div></div>
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line2.png"></div>
+        <!--硫黄ボム-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Sulfur_Bomb.png" width="80" height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Sulfur_Bomb"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">3</div>
+          <div class="item box-big2">硫黄ボム</div>
+        </div>
+        <div class="line-end4"></div>
+
+        <!--12列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line3.png"></div>
+        <!--ネットスロワー-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Net_Thrower.png" width="80" height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Net_Thrower"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">3</div>
+          <div class="item box-big2">ネットスロワー</div>
+        </div>
+        <div class="line-end2"></div>
+
+        <!--13列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line3.png"></div>
+        <!--ホースステーション-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Hose_Station.png" width="80" height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Hose_Station"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">3</div>
+          <div class="item box-big2">ホースステーション</div>
+        </div>
+        <div class="line-end2"></div>
+
+        <!--14列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line3.png"></div>
+        <!--クレーン-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Crane.png" width="80" height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Crane"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">25</div>
+          <div class="item box-big2">クレーン</div>
+        </div>
+        <div class="line-end2"></div>
+
+        <!--15列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line3.png"></div>
+        <!--カイト-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Kite.png" width="80" height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Kite"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">2</div>
+          <div class="item box-big2">カイト</div>
+        </div>
+        <div class="line-end2"></div>
+
+        <!--16列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line3.png"></div>
+        <!--レンジファインダー-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Rangefinder.png" width="80" height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Rangefinder"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">5</div>
+          <div class="item box-big2">レンジファインダー</div>
+        </div>
+        <div class="line-end2"></div>
+
+        <!--17列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line3.png"></div>
+        <!--EXOSKELTON-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/No_Image.png" width="80" height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Exoskelton"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">4</div>
+          <div class="item box-big2">EXOSKELTON</div>
+        </div>
+        <div class="line-end2"></div>
+
+        <!--18列目-->
+        <div><img src="https://hagi-04.github.io/FFFFFF/image/line2.png"></div>
+        <!--BATTLE FAN-->
+        <div class="content">
+          <div class="item box-big1"><img src="https://hagi-04.github.io/FFFFFF/image/No_Image.png" width="80" height="80"></div>
+          <div class="item"><input type="checkbox" name="learned" value="Battle_Fan"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big2">BATTLE FAN</div>
+        </div>
+        <div class="line-end2"></div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

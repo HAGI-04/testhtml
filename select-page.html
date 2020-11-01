@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>LO技術ツリー習得情報管理</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body onload="selectAreaInitialize();">
+
+  <div class="header">
+    <div class="header-logo"><a href="main-page.html">FFFFFF</a></div>
+    <div class="header-list">
+      <ul>
+        <li><a href="select-page.html">技術取得情報編集</a></li>
+        <li><a href="show-page.html">技術習得情報参照</a></li>
+        <li><a href="#">同盟関係(WIP)</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="container">
+
+      <div class="wrapper1">
+        <select class="user-select" id="user-select">
+          <!--リーダー-->
+          <option class="user" value="Tkm3">Tkm3</option>
+          <option class="user" value="FF">FF</option>
+          <option class="user" value="esta">esta</option>
+          <option class="user" value="Marion">マリオン</option>
+          <option class="user" value="tyano">tyano</option>
+          <!--オフィサー-->
+          <option class="user" value="Namekzy">Namekzy</option>
+          <option class="user" value="Trapnes">Trapnes</option>
+          <option class="user" value="yancha">yancha</option>
+          <!--メンバー-->
+          <option class="user" value="AREnt">AREnt</option>
+          <option class="user" value="yuta">yuta</option>
+          <option class="user" value="kaeru">kaeru</option>
+          <option class="user" value="KOOLMINT">KOOLMINT</option>
+          <option class="user" value="tatikaze">tatikaze</option>
+          <option class="user" value="niyari">niyari</option>
+          <option class="user" value="Sakuba">Sakuba</option>
+          <option class="user" value="mimic">mimic</option>
+          <option class="user" value="Lincarn">Lincarn</option>
+          <option class="user" value="Romi">Romi</option>
+          <option class="user" value="kagura">kagura</option>
+          <option class="user" value="nyuumon">nyuumon</option>
+          <option class="user" value="tako">tako</option>
+          <option class="user" value="JuanT">JuanT</option>
+          <option class="user" value="Sikjoy">Sikjoy</option>
+        </select>
+        <a class="button file-download" id="download" href="#" onclick="treeDataDownload()">技術習得データDL</a>
+      </div>
+
+      <div class="wrapper2">
+        <a class="button type-select" href="vitamins-edit-page.html">ビタミン剤</a>
+        <a class="button type-select" href="equipment-armor-edit-page.html">装備（防具）</a>
+        <a class="button type-select" href="equipment-weapon-edit-page.html">装備（武器）</a>
+        <a class="button type-select" href="equipment-other-edit-page.html">装備（装備品）</a>
+        <a class="button type-select" href="crafting-edit-page.html">クラフト</a>
+        <a class="button type-select" href="construction-combat-edit-page.html">建築（武装）</a>
+        <a class="button type-select" href="construction-other-edit-page.html">建築（その他）</a>
+        <a class="button type-select" href="walkers-low-edit-page.html">ウォーカー（低Tier）（未完成）</a>
+        <a class="button type-select" href="walkers-high-edit-page.html">ウォーカー（高Tier）（未完成）</a>
+      </div>
+
+    </div>
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

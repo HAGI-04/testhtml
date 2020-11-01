@@ -1,0 +1,3336 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>LO技術ツリー習得情報管理</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body onload="showLearnedData();">
+
+  <div class="header">
+    <div class="header-logo"><a href="main-page.html">FFFFFF</a></div>
+    <div class="header-list">
+      <ul>
+        <li><a href="select-page.html">技術取得情報編集</a></li>
+        <li><a href="show-page.html">技術習得情報参照</a></li>
+        <li><a href="#">同盟関係(WIP)</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="container">
+
+      <div class="showcase-wrapper clearfix">
+        <h3>ビタミン剤</h3>
+
+        <!--ビジョンパウダー-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/vitamins/Vision_Powder_icon.png"
+              width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">3</div>
+          <div class="item box-big4">ビジョンパウダー</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Vision_Powder">
+            </ul>
+          </ul>
+        </div>
+
+        <!--砂漠ラバ-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/vitamins/Desert_Mule_icon.png"
+              width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">砂漠ラバ</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Desert_Mule">
+            </ul>
+          </ul>
+        </div>
+
+        <!--ジョジョ・モジョ-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/vitamins/Jojo_Mojo_icon.png"
+              width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">ジョジョ・モジョ</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Jojo_Mojo">
+            </ul>
+          </ul>
+        </div>
+
+        <!--怒りの煙-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/vitamins/Fury_Fumes_icon.png"
+              width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">35</div>
+          <div class="item box-big4">怒りの煙</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Fury_Fumes">
+            </ul>
+          </ul>
+        </div>
+
+        <!--焼灼ステーション-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/vitamins/Cauterizing_Station.png"
+              width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">50</div>
+          <div class="item box-big4">焼灼ステーション</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Cauterizing_Station">
+            </ul>
+          </ul>
+        </div>
+
+        <!--Rupuよけ剤-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/vitamins/Rupu_Repellent_icon.png"
+              width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big4">Rupuよけ剤</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Rupu_Repellent">
+            </ul>
+          </ul>
+        </div>
+
+        <!--レースダスト-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/vitamins/Race_Dust_icon.png"
+              width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big4">レースダスト</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Race_Dust">
+            </ul>
+          </ul>
+        </div>
+
+        <!--サイナス・デストロイヤー-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/vitamins/Sinus_Destroyer_icon.png"
+              width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">3</div>
+          <div class="item box-big4">サイナス・デストロイヤー</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Sinus_Destroyer">
+            </ul>
+          </ul>
+        </div>
+
+        <!--ボーンブレイカー-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/vitamins/Bonebreaker_icon.png"
+              width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">ボーンブレイカー</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Bonebreaker">
+            </ul>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="showcase-wrapper clearfix">
+        <h3>装備（防具）</h3>
+
+        <!--粗末な包帯-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Primitive_Bandage.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">2</div>
+          <div class="item box-big4">粗末な包帯</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Primitive_Bandage">
+            </ul>
+          </ul>
+        </div>
+
+        <!--消毒済みの包帯-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Sterile_Bandage.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">15</div>
+          <div class="item box-big4">消毒済みの包帯</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Sterile_Bandage">
+            </ul>
+          </ul>
+        </div>
+
+        <!--布のヘッドラップ-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Fiber_Headwrap.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">3</div>
+          <div class="item box-big4">布のヘッドラップ</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Fiber_Headwrap">
+            </ul>
+          </ul>
+        </div>
+
+        <!--布の服とズボン-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Fiber_Shirt_and_Trousers.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">6</div>
+          <div class="item box-big4">布の服とズボン</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Fiber_Shirt_and_Trousers">
+            </ul>
+          </ul>
+        </div>
+
+        <!--布のアームラップ-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Fiber_Arm_Wraps.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">布のアームラップ</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Fiber_Arm_Wraps">
+            </ul>
+          </ul>
+        </div>
+
+        <!--布のサンダル-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Fiber_Sandals.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">3</div>
+          <div class="item box-big4">布のサンダル</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Fiber_Sandals">
+            </ul>
+          </ul>
+        </div>
+
+        <!--RUPUの毛皮アーマー-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Rupu_Fur_Armor.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">RUPUの毛皮アーマー</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Rupu_Fur_Armor">
+            </ul>
+          </ul>
+        </div>
+
+        <!--マント付きのRUPUの毛皮のアーマー-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Cloaked_Rupu_Fur_Armor.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">25</div>
+          <div class="item box-big4">マントRUPU毛皮アーマー</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Cloaked_Rupu_Fur_Armor">
+            </ul>
+          </ul>
+        </div>
+
+        <!--RUPUの毛皮で作った袖-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Rupu_Fur_Sleeves.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">RUPUの毛皮で作った袖</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Rupu_Fur_Sleeves">
+            </ul>
+          </ul>
+        </div>
+
+        <!--RUPUの毛皮サンダル-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Rupu_Fur_Sandals.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">RUPUの毛皮サンダル</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Rupu_Fur_Sandals">
+            </ul>
+          </ul>
+        </div>
+
+        <!--三重縫いのアーマー-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Triple_Stitch_Armor.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">35</div>
+          <div class="item box-big4">三重縫いのアーマー</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Triple_Stitch_Armor">
+            </ul>
+          </ul>
+        </div>
+
+        <!--三重縫いのブレイサー-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Triple_Stitch_Bracers.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">12</div>
+          <div class="item box-big4">三重縫いのブレイサー</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Triple_Stitch_Bracers">
+            </ul>
+          </ul>
+        </div>
+
+        <!--三重縫いのブーツ-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Triple_Stitch_Boots.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">12</div>
+          <div class="item box-big4">三重縫いのブーツ</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Triple_Stitch_Boots">
+            </ul>
+          </ul>
+        </div>
+
+        <!--森林監督官のアーマー-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Foresters_Armor.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">35</div>
+          <div class="item box-big4">森林監督官のアーマー</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Foresters_Armor">
+            </ul>
+          </ul>
+        </div>
+
+        <!--もろい骨のアーマー-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Brittle_Bone_Armor.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">35</div>
+          <div class="item box-big4">もろい骨のアーマー</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Brittle_Bone_Armor">
+            </ul>
+          </ul>
+        </div>
+
+        <!--森林監督官の袖-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Foresters_Sleeves.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big4">森林監督官の袖</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Foresters_Sleeves">
+            </ul>
+          </ul>
+        </div>
+
+        <!--森林監督官のサンダル-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Foresters_Sandals.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big4">森林監督官のサンダル</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Foresters_Sandals">
+            </ul>
+          </ul>
+        </div>
+
+        <!--バスクウッドのアーマー-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Baskwood_Armor.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">35</div>
+          <div class="item box-big4">バスクウッドのアーマー</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Baskwood_Armor">
+            </ul>
+          </ul>
+        </div>
+
+        <!--バスクウッドのブレイサー-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Baskwood_Bracers.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big4">バスクウッドのブレイサー</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Baskwood_Bracers">
+            </ul>
+          </ul>
+        </div>
+
+        <!--バスクウッドのブーツ-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Baskwood_Boots.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big4">バスクウッドのブーツ</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Baskwood_Boots">
+            </ul>
+          </ul>
+        </div>
+
+        <!--レッドウッドの木材のアーマー-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Redwood_Wood_Armor.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">3</div>
+          <div class="item box-big4">レッドウッドの木材のアーマー</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Redwood_Wood_Armor">
+            </ul>
+          </ul>
+        </div>
+
+        <!--レッドウッドの木製ブレイサー-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Redwood_Wood_Brace.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big4">レッドウッドの木製ブレイサー</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Redwood_Wood_Brace">
+            </ul>
+          </ul>
+        </div>
+
+        <!--レッドウッドの木材のブーツ-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Redwood_Wood_Boots.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big4">レッドウッドの木材のブーツ</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Redwood_Wood_Boots">
+            </ul>
+          </ul>
+        </div>
+
+        <!--甲皮のアーマー-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Carapace_Armor.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">5</div>
+          <div class="item box-big4">甲皮のアーマー</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Carapace_Armor">
+            </ul>
+          </ul>
+        </div>
+
+        <!--甲皮のガントレット-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Carapace_Gauntlets.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">3</div>
+          <div class="item box-big4">甲皮のガントレット</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Carapace_Gauntlets">
+            </ul>
+          </ul>
+        </div>
+
+        <!--甲皮のブーツ-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Carapace_Boots.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">3</div>
+          <div class="item box-big4">甲皮のブーツ</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Carapace_Boots">
+            </ul>
+          </ul>
+        </div>
+
+        <!--マント-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Cloak.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big4">マント</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Cloak">
+            </ul>
+          </ul>
+        </div>
+
+        <!--鉄の鋲付きアーマー-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Iron_Studded_Armor.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">25</div>
+          <div class="item box-big4">鉄の鋲付きアーマー</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Iron_Studded_Armor">
+            </ul>
+          </ul>
+        </div>
+
+        <!--鉄の鋲付きガントレット-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Iron_Studded_Gauntlets.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">8</div>
+          <div class="item box-big4">鉄の鋲付きガントレット</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Iron_Studded_Gauntlets">
+            </ul>
+          </ul>
+        </div>
+
+        <!--鉄の鋲付きブーツ-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-armor/Iron_Studded_Boots.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">8</div>
+          <div class="item box-big4">鉄の鋲付きブーツ</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Iron_Studded_Boots">
+            </ul>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="showcase-wrapper clearfix">
+        <h3>装備（武器）</h3>
+
+        <!--木こりのハチェット-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Woodcutters_Hatchet.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">3</div>
+          <div class="item box-big4">木こりのハチェット</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Woodcutters_Hatchet">
+            </ul>
+          </ul>
+        </div>
+
+        <!--上級ハチェット-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Advanced_Hatchet.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big4">上級ハチェット</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Advanced_Hatchet">
+            </ul>
+          </ul>
+        </div>
+
+        <!--簡素なつるはし-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Simple_Pickaxe.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">簡素なつるはし</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Simple_Pickaxe">
+            </ul>
+          </ul>
+        </div>
+
+        <!--上級つるはし-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Advanced_Pickaxe.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big4">上級つるはし</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Advanced_Pickaxe">
+            </ul>
+          </ul>
+        </div>
+
+        <!--達人のつるはし-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Master_Pickaxe.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">8</div>
+          <div class="item box-big4">達人のつるはし</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Master_Pickaxe">
+            </ul>
+          </ul>
+        </div>
+
+        <!--簡素な鎌-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Simple_Sickle.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">簡素な鎌</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Simple_Sickle">
+            </ul>
+          </ul>
+        </div>
+
+        <!--鎌-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Scythe.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">50</div>
+          <div class="item box-big4">鎌</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Scythe">
+            </ul>
+          </ul>
+        </div>
+
+        <!--簡素な修理ハンマー-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Simple_Repair_Hammer.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">簡素な修理ハンマー</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Simple_Repair_Hammer">
+            </ul>
+          </ul>
+        </div>
+
+        <!--たいまつ-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/No_Image.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">3</div>
+          <div class="item box-big4">たいまつ</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Torch">
+            </ul>
+          </ul>
+        </div>
+
+        <!--ジャベリン-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Javelin.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">ジャベリン</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Javelin">
+            </ul>
+          </ul>
+        </div>
+
+        <!--FIREBOMB-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Firebomb.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">5</div>
+          <div class="item box-big4">FIREBOMB</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Firebomb">
+            </ul>
+          </ul>
+        </div>
+
+        <!--THROWING NET-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/No_Image.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">30</div>
+          <div class="item box-big4">THROWING NET</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Throwing_Net">
+            </ul>
+          </ul>
+        </div>
+
+        <!--殴り棒-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Beat_Stick.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">0</div>
+          <div class="item box-big4">殴り棒</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Beat_Stick">
+            </ul>
+          </ul>
+        </div>
+
+        <!--ボーンスパイクの剣-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Bonespike_Sword.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">20</div>
+          <div class="item box-big4">ボーンスパイクの剣</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Bonespike_Sword">
+            </ul>
+          </ul>
+        </div>
+
+        <!--FIRESTONE BLUDGEON-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Firestone_Bludgeon.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">2</div>
+          <div class="item box-big4">FIRESTONE BLUDGEON</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Firestone_Bludgeon">
+            </ul>
+          </ul>
+        </div>
+
+        <!--FIRESTONE KOPESH-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Firestone_Kopesh.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">2</div>
+          <div class="item box-big4">FIRESTONE KOPESH</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Firestone_Kopesh">
+            </ul>
+          </ul>
+        </div>
+
+        <!--短いマレットブレード-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Short_Malletblade.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big4">短いマレットブレード</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Short_Malletblade">
+            </ul>
+          </ul>
+        </div>
+
+        <!--ワインダンのサーベル-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Wyndan_Sabre.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">5</div>
+          <div class="item box-big4">ワインダンのサーベル</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Wyndan_Sabre">
+            </ul>
+          </ul>
+        </div>
+
+        <!--二ビルの湾曲したダガー-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Nibiran_Curved_Dagger.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">12</div>
+          <div class="item box-big4">二ビルの湾曲したダガー</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Nibiran_Curved_Dagger">
+            </ul>
+          </ul>
+        </div>
+
+        <!--長いボーンスパイクのソードスタッフ-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Long_Bonespike_Swordstaff.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">30</div>
+          <div class="item box-big4">長ボンスパソードスタッフ</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Long_Bonespike_Swordstaff">
+            </ul>
+          </ul>
+        </div>
+
+        <!--ノコ刃の剣-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Sawtooth_Sword.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">40</div>
+          <div class="item box-big4">ノコ刃の剣</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Sawtooth_Sword">
+            </ul>
+          </ul>
+        </div>
+
+        <!--FIRESTONE LONGBLADE-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Firestone_Longblade.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">2</div>
+          <div class="item box-big4">FIRESTONE LONGBLADE</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Firestone_Longblade">
+            </ul>
+          </ul>
+        </div>
+
+        <!--シングルブレード-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Singblade.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">2</div>
+          <div class="item box-big4">シングルブレード</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Singblade">
+            </ul>
+          </ul>
+        </div>
+
+        <!--ワインダンの炎の剣-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Wyndan_Flame_Sword.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">ワインダンの炎の剣</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Wyndan_Flame_Sword">
+            </ul>
+          </ul>
+        </div>
+
+        <!--ニビルのデキャビテイター-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Nibiran_Decapitator.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">25</div>
+          <div class="item box-big4">ニビルのデキャビテイター</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Nibiran_Decapitator">
+            </ul>
+          </ul>
+        </div>
+
+        <!--骨のハンドアックス-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Rawbone_Hand_Axe.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">20</div>
+          <div class="item box-big4">骨のハンドアックス</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Rawbone_Hand_Axe">
+            </ul>
+          </ul>
+        </div>
+
+        <!--重い骨のハンドアックス-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Heavy_Rawbone_Hand_Axe.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">32</div>
+          <div class="item box-big4">重い骨のハンドアックス</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Heavy_Rawbone_Hand_Axe">
+            </ul>
+          </ul>
+        </div>
+
+        <!--岩切りのハンドアックス-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Bouldercut_Hand_Axe.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">5</div>
+          <div class="item box-big4">岩切りのハンドアックス</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Bouldercut_Hand_Axe">
+            </ul>
+          </ul>
+        </div>
+
+        <!--二ビルのハンドアックス-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Nibiran_Hand_Axe.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">二ビルのハンドアックス</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Nibiran_Hand_Axe">
+            </ul>
+          </ul>
+        </div>
+
+        <!--FIRESTONE AXE-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Firestone_Axe.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">2</div>
+          <div class="item box-big4">FIRESTONE AXE</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Firestone_Axe">
+            </ul>
+          </ul>
+        </div>
+
+        <!--骨のバトルアックス-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Rawbone_Battle_Axe.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">35</div>
+          <div class="item box-big4">骨のバトルアックス</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Rawbone_Battle_Axe">
+            </ul>
+          </ul>
+        </div>
+
+        <!--岩切りのバトルアックス-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Bouldercut_Battle_Axe.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">7</div>
+          <div class="item box-big4">岩切りのバトルアックス</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Bouldercut_Battle_Axe">
+            </ul>
+          </ul>
+        </div>
+
+        <!--二ビルのバトルアックス-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Nibiran_Battle_Axe.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">12</div>
+          <div class="item box-big4">二ビルのバトルアックス</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Nibiran_Battle_Axe">
+            </ul>
+          </ul>
+        </div>
+
+        <!--FIRESTONE BATTLEAXE-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Firestone_Battleaxe.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">2</div>
+          <div class="item box-big4">FIRESTONE BATTLEAXE</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Firestone_Battleaxe">
+            </ul>
+          </ul>
+        </div>
+
+        <!--ジャガートゥースのこん棒-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Jaggertooth_Club.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">ジャガートゥースのこん棒</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Jaggertooth_Club">
+            </ul>
+          </ul>
+        </div>
+
+        <!--骨のこん棒-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Rawbone_Club.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">20</div>
+          <div class="item box-big4">骨のこん棒</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Rawbone_Club">
+            </ul>
+          </ul>
+        </div>
+
+        <!--スパイクボーンのこん棒-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Spikebone_Club.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">25</div>
+          <div class="item box-big4">スパイクボーンのこん棒</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Spikebone_Club">
+            </ul>
+          </ul>
+        </div>
+
+        <!--セラミック製の短いひづめのメイス-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Short_Ceramic_Hoofmace.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big4">セラ製短いひづめのメイス</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Short_Ceramic_Hoofmace">
+            </ul>
+          </ul>
+        </div>
+
+        <!--ワインダンのハンマー-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Wyndan_Hammer.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">5</div>
+          <div class="item box-big4">ワインダンのハンマー</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Wyndan_Hammer">
+            </ul>
+          </ul>
+        </div>
+
+        <!--二ビルのハンマー-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Nibiran_Hammer.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">二ビルのハンマー</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Nibiran_Hammer">
+            </ul>
+          </ul>
+        </div>
+
+        <!--ジャガートゥースの大斧-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Jaggertooth_Maul.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">ジャガートゥースの大斧</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Jaggertooth_Maul">
+            </ul>
+          </ul>
+        </div>
+
+        <!--骨の大斧-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Rawbone_Maul.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">25</div>
+          <div class="item box-big4">骨の大斧</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Rawbone_Maul">
+            </ul>
+          </ul>
+        </div>
+
+        <!--スパイクボーンの大斧-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Spikebone_Maul.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">35</div>
+          <div class="item box-big4">スパイクボーンの大斧</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Spikebone_Maul">
+            </ul>
+          </ul>
+        </div>
+
+        <!--FIRESTONE BOZDOGAN-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Firestone_Bozdogan.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">2</div>
+          <div class="item box-big4">FIRESTONE BOZDOGAN</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Firestone_Bozdogan">
+            </ul>
+          </ul>
+        </div>
+
+        <!--セラミック製の長いひづめのメイス-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Long_Ceramic_Hoofmace.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">2</div>
+          <div class="item box-big4">セラ製長いひづめのメイス</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Long_Ceramic_Hoofmace">
+            </ul>
+          </ul>
+        </div>
+
+        <!--ワインダンのウォーハンマー-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Wyndan_Warhammer.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">8</div>
+          <div class="item box-big4">ワインダンのウォーハンマー</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Wyndan_Warhammer">
+            </ul>
+          </ul>
+        </div>
+
+        <!--二ビルのウォーハンマー-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Nibiran_Warhammer.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">15</div>
+          <div class="item box-big4">二ビルのウォーハンマー</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Nibiran_Warhammer">
+            </ul>
+          </ul>
+        </div>
+
+        <!--先を丸めた六尺棒-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Blunt_Quarterstaff.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">先を丸めた六尺棒</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Blunt_Quarterstaff">
+            </ul>
+          </ul>
+        </div>
+
+        <!--トラベラーの杖-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Travellers_Staff.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">トラベラーの杖</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Travellers_Staff">
+            </ul>
+          </ul>
+        </div>
+
+        <!--骨の六尺棒-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Rawbone_Quarterstaff.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">30</div>
+          <div class="item box-big4">骨の六尺棒</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Rawbone_Quarterstaff">
+            </ul>
+          </ul>
+        </div>
+
+        <!--FIRESTONE HAMMERSTAFF-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Firestone_Hammerstaff.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">2</div>
+          <div class="item box-big4">FIRESTONE HAMMERSTAFF</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Firestone_Hammerstaff">
+            </ul>
+          </ul>
+        </div>
+
+        <!--FIRESTONE BLADESTAFF-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/No_Image.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">2</div>
+          <div class="item box-big4">FIRESTONE BLADESTAFF</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Firestone_Bladestaff">
+            </ul>
+          </ul>
+        </div>
+
+        <!--パドルブレードの六尺棒-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Paddleblade_Quarterstaff.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big4">パドルブレードの六尺棒</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Paddleblade_Quarterstaff">
+            </ul>
+          </ul>
+        </div>
+
+        <!--ワインダンブレードの六尺棒-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Wyndanblade_Quarterstaff.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">8</div>
+          <div class="item box-big4">ワインダンブレード六尺棒</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Wyndanblade_Quarterstaff">
+            </ul>
+          </ul>
+        </div>
+
+        <!--二ビルの六尺棒-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Nibiran_Quarterstaff.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">22</div>
+          <div class="item box-big4">二ビルの六尺棒</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Nibiran_Quarterstaff">
+            </ul>
+          </ul>
+        </div>
+
+        <!--アイアンブレードの六尺棒-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-weapon/Ironblade_Quarterstaff.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">22</div>
+          <div class="item box-big4">アイアンブレードの六尺棒</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Ironblade_Quarterstaff">
+            </ul>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="showcase-wrapper clearfix">
+        <h3>装備（装備品）</h3>
+
+        <!--修理されたグラップリングフック-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-other/Repaired_Grappling_Hook.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">3</div>
+          <div class="item box-big4">修理されたグラップリング</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Repaired_Grappling_Hook">
+            </ul>
+          </ul>
+        </div>
+
+        <!--素早いグラップリングフック-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-other/Fast_Grappling_Hook.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">素早いグラップリング</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Fast_Grappling_Hook">
+            </ul>
+          </ul>
+        </div>
+
+        <!--ベルトなしのグラップリングフック-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-other/Beltless_Grappling_Hook.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">2</div>
+          <div class="item box-big4">ベルトなしグラップリング</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Beltless_Grappling_Hook">
+            </ul>
+          </ul>
+        </div>
+
+        <!--長いグラップリングフック-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-other/Long_Grappling_Hook.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">50</div>
+          <div class="item box-big4">長いグラップリングフック</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Long_Grappling_Hook">
+            </ul>
+          </ul>
+        </div>
+
+        <!--トルクバックパック-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-other/Torque_Backpack.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">2</div>
+          <div class="item box-big4">トルクバックパック</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Torque_Backpack">
+            </ul>
+          </ul>
+        </div>
+
+        <!--羽のブーツ-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/equipment-other/Feather_Boots.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">25</div>
+          <div class="item box-big4">羽のブーツ</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Feather_Boots">
+            </ul>
+          </ul>
+        </div>
+
+        <!--ウイングスーツ-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/equipment-other/Wingsuit.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">50</div>
+          <div class="item box-big4">ウイングスーツ</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Wingsuit">
+            </ul>
+          </ul>
+        </div>
+
+        <!--代用ボトル-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-other/Makeshift_Bottle.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">2</div>
+          <div class="item box-big4">代用ボトル</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Makeshift_Bottle">
+            </ul>
+          </ul>
+        </div>
+
+        <!--急造品のボトル-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-other/Improvised_Bottle.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big4">急造品のボトル</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Improvised_Bottle">
+            </ul>
+          </ul>
+        </div>
+
+        <!--骨のボトル-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/equipment-other/Bone_Bottle.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">25</div>
+          <div class="item box-big4">骨のボトル</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Bone_Bottle">
+            </ul>
+          </ul>
+        </div>
+
+        <!--裂けた骨のボトル-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-other/Split_Bone_Bottle.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">35</div>
+          <div class="item box-big4">裂けた骨のボトル</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Split_Bone_Bottle">
+            </ul>
+          </ul>
+        </div>
+
+        <!--セラミックフラスコ-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/equipment-other/Ceramic_Flask.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">2</div>
+          <div class="item box-big4">セラミックフラスコ</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Ceramic_Flask">
+            </ul>
+          </ul>
+        </div>
+
+        <!--割れたセラミックフラスコ-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-other/Split_Ceramic_Flask.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">3</div>
+          <div class="item box-big4">割れたセラミックフラスコ</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Split_Ceramic_Flask">
+            </ul>
+          </ul>
+        </div>
+
+        <!--Obsidian Flask-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-other/Obsidian_Flask.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big4">Obsidian Flask</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Obsidian_Flask">
+            </ul>
+          </ul>
+        </div>
+
+        <!--耐久性のある水の袋-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-other/Durable_Water_Sack.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">耐久性のある水の袋</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Durable_Water_Sack">
+            </ul>
+          </ul>
+        </div>
+
+        <!--裂かれた耐久性のある水の袋-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-other/Split_Durable_Water_Sack.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">25</div>
+          <div class="item box-big4">裂かれた耐久性のある水袋</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Split_Durable_Water_Sack">
+            </ul>
+          </ul>
+        </div>
+
+        <!--水循環装置-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-other/Water_Circulator.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">水循環装置</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Water_Circulator">
+            </ul>
+          </ul>
+        </div>
+
+        <!--採集ポーチ-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-other/Foraging_Pouch.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">5</div>
+          <div class="item box-big4">採集ポーチ</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Foraging_Pouch">
+            </ul>
+          </ul>
+        </div>
+
+        <!--大きな収集ポーチ-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-other/Large_Gathering_Pouch.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">大きな収集ポーチ</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Large_Gathering_Pouch">
+            </ul>
+          </ul>
+        </div>
+
+        <!--軽いバックパック-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-other/Light_Backpack.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">軽いバックパック</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Light_Backpack">
+            </ul>
+          </ul>
+        </div>
+
+        <!--中型のバックパック-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-other/Medium_Backpack.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">35</div>
+          <div class="item box-big4">中型のバックパック</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Medium_Backpack">
+            </ul>
+          </ul>
+        </div>
+
+        <!--重いバックパック-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-other/Heavy_Backpack.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">重いバックパック</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Heavy_Backpack">
+            </ul>
+          </ul>
+        </div>
+
+        <!--トルクバッテリー-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/equipment-other/Torque_battery.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">25</div>
+          <div class="item box-big4">トルクバッテリー</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Torque_battery">
+            </ul>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="showcase-wrapper clearfix">
+        <h3>クラフト</h3>
+
+        <!--浄化された水-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/crafting/Purified_Water.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">浄化された水</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Purified_Water">
+            </ul>
+          </ul>
+        </div>
+
+        <!--木製のシャフト-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/crafting/Wood_Shaft.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big4">木製のシャフト</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Wood_Shaft">
+            </ul>
+          </ul>
+        </div>
+
+        <!--布織り-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/crafting/Fiber_Weave.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big4">布織り</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Fiber_Weave">
+            </ul>
+          </ul>
+        </div>
+
+        <!--地ろう-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/crafting/Earth_Wax.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">5</div>
+          <div class="item box-big4">地ろう</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Earth_Wax">
+            </ul>
+          </ul>
+        </div>
+
+        <!--ロープ-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/crafting/Rope.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">25</div>
+          <div class="item box-big4">ロープ</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Rope">
+            </ul>
+          </ul>
+        </div>
+
+        <!--骨のニカワ-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/crafting/Bone_Glue.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">25</div>
+          <div class="item box-big4">骨のニカワ</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Bone_Glue">
+            </ul>
+          </ul>
+        </div>
+
+        <!--ノマドの布-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/crafting/Nomad_Cloth.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">8</div>
+          <div class="item box-big4">ノマドの布</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Nomad_Cloth">
+            </ul>
+          </ul>
+        </div>
+
+        <!--粘土-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/crafting/Clay.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big4">粘土</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Clay">
+            </ul>
+          </ul>
+        </div>
+
+        <!--強化厚板-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/crafting/Reinforced_Plank.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big4">強化厚板</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Reinforced_Plank">
+            </ul>
+          </ul>
+        </div>
+
+        <!--液体燃料-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/crafting/Liquid_Fuel.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">6</div>
+          <div class="item box-big4">液体燃料</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Liquid_Fuel">
+            </ul>
+          </ul>
+        </div>
+
+        <!--かけら-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/crafting/Fragment.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">50</div>
+          <div class="item box-big4">かけら</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Fragment">
+            </ul>
+          </ul>
+        </div>
+
+        <!--キャンプファイア-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/crafting/Camp_Fire.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">2</div>
+          <div class="item box-big4">キャンプファイア</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Camp_Fire">
+            </ul>
+          </ul>
+        </div>
+
+        <!--木工ステーション-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/crafting/Woodworking_Station_icon.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">木工ステーション</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Woodworking_Station_icon">
+            </ul>
+          </ul>
+        </div>
+
+        <!--上級木工ステーション-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/crafting/Advanced_Woodworking_Station_icon.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">2</div>
+          <div class="item box-big4">上級木工ステーション</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Advanced_Woodworking_Station_icon">
+            </ul>
+          </ul>
+        </div>
+
+        <!--職人の木工ステーション-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/crafting/Artificer_Woodworking_Station.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">12</div>
+          <div class="item box-big4">職人の木工ステーション</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Artificer_Woodworking_Station">
+            </ul>
+          </ul>
+        </div>
+
+        <!--裁縫ステーション-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/crafting/Fiberworking_Station.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">9</div>
+          <div class="item box-big4">裁縫ステーション</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Fiberworking_Station">
+            </ul>
+          </ul>
+        </div>
+
+        <!--上級裁縫ステーション-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/crafting/Advanced_Fiberworking_Station.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">25</div>
+          <div class="item box-big4">上級裁縫ステーション</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Advanced_Fiberworking_Station">
+            </ul>
+          </ul>
+        </div>
+
+        <!--ストンピングステーション-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/crafting/Stomping_Station.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">25</div>
+          <div class="item box-big4">ストンピングステーション</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Stomping_Station">
+            </ul>
+          </ul>
+        </div>
+
+        <!--土壌掘削機-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/crafting/Soil_Excavator.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">土壌掘削機</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Soil_Excavator">
+            </ul>
+          </ul>
+        </div>
+
+        <!--トルク風車-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/crafting/Torque_Windmill_icon.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">40</div>
+          <div class="item box-big4">トルク風車</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Torque_Windmill_icon">
+            </ul>
+          </ul>
+        </div>
+
+        <!--浄化ステーション-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/crafting/Purification_Station.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">35</div>
+          <div class="item box-big4">浄化ステーション</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Purification_Station">
+            </ul>
+          </ul>
+        </div>
+
+        <!--水凝縮器-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/crafting/Water_Condenser.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">32</div>
+          <div class="item box-big4">水凝縮器</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Water_Condenser">
+            </ul>
+          </ul>
+        </div>
+
+        <!--溶鉱炉-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/crafting/Furnace.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">3</div>
+          <div class="item box-big4">溶鉱炉</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Furnace">
+            </ul>
+          </ul>
+        </div>
+
+        <!--最新の溶鉱炉-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/crafting/Advanced_Furnace.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">25</div>
+          <div class="item box-big4">最新の溶鉱炉</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Advanced_Furnace">
+            </ul>
+          </ul>
+        </div>
+
+        <!--採石場-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/crafting/Quarry.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">35</div>
+          <div class="item box-big4">採石場</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Quarry">
+            </ul>
+          </ul>
+        </div>
+
+        <!--製材所-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/crafting/Lambermill.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">40</div>
+          <div class="item box-big4">製材所</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Lambermill">
+            </ul>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="showcase-wrapper clearfix">
+        <h3>建築（武装）</h3>
+
+        <!--バリスタ-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Ballista.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">バリスタ</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Ballista">
+            </ul>
+          </ul>
+        </div>
+
+        <!--遠隔バリスタ-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Remote_Ballista.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">遠隔バリスタ</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Remote_Ballista">
+            </ul>
+          </ul>
+        </div>
+
+        <!--フリントのボルト-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Flint_Bolt.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">フリントのボルト</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Flint_Bolt">
+            </ul>
+          </ul>
+        </div>
+
+        <!--骨のボルト-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Bone_Bolt.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">20</div>
+          <div class="item box-big4">骨のボルト</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Bone_Bolt">
+            </ul>
+          </ul>
+        </div>
+
+        <!--セラミックチップのボルト-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Ceramic-Tipped_Bolt.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big4">セラミックチップのボルト</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Ceramic-Tipped_Bolt">
+            </ul>
+          </ul>
+        </div>
+
+        <!--EXPLOSIVE BOLT-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Explosive_Bolt.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">8</div>
+          <div class="item box-big4">EXPLOSIVE BOLT</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Explosive_Bolt">
+            </ul>
+          </ul>
+        </div>
+
+        <!--先端が鉄製のボルト-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Iron-Tipped_Bolt.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">3</div>
+          <div class="item box-big4">先端が鉄製のボルト</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Iron-Tipped_Bolt">
+            </ul>
+          </ul>
+        </div>
+
+        <!--火のボルト-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Fire_Bolt.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">火のボルト</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Fire_Bolt">
+            </ul>
+          </ul>
+        </div>
+
+        <!--業火のボルト-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Hellfire_Bolt.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">20</div>
+          <div class="item box-big4">業火のボルト</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Hellfire_Bolt">
+            </ul>
+          </ul>
+        </div>
+
+        <!--リピーター-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Repeater.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">35</div>
+          <div class="item box-big4">リピーター</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Repeater">
+            </ul>
+          </ul>
+        </div>
+
+        <!--EXPLOSIVE DART-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Explosive_Dart.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">EXPLOSIVE DART</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Explosive_Dart">
+            </ul>
+          </ul>
+        </div>
+
+        <!--FROATING MINE-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/No_Image.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big4">FROATING MINE</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Froating_Mine">
+            </ul>
+          </ul>
+        </div>
+
+        <!--スキャッターショット・ガン-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Scattershot_Gun.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">28</div>
+          <div class="item box-big4">スキャッターショットガン</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Scattershot_Gun">
+            </ul>
+          </ul>
+        </div>
+
+        <!--スキャッターショット-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Scattershot.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">5</div>
+          <div class="item box-big4">スキャッターショット</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Scattershot">
+            </ul>
+          </ul>
+        </div>
+
+        <!--ハルブレーカー・スキャッターショット-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Hullbreaker_Scattershot.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">20</div>
+          <div class="item box-big4">ハルブレーカー・SS</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Hullbreaker_Scattershot">
+            </ul>
+          </ul>
+        </div>
+
+        <!--スリングショット-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Slingshot.png
+            " width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">2</div>
+          <div class="item box-big4">スリングショット</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Slingshot">
+            </ul>
+          </ul>
+        </div>
+
+        <!--カタパルト-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Catapult.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">4</div>
+          <div class="item box-big4">カタパルト</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Catapult">
+            </ul>
+          </ul>
+        </div>
+
+        <!--ハルブレーカー・ロック-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Hullbreaker_Rock.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">40</div>
+          <div class="item box-big4">ハルブレーカー・ロック</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Hullbreaker_Rock">
+            </ul>
+          </ul>
+        </div>
+
+        <!--ファイアボム-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Fire_Bomb.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">3</div>
+          <div class="item box-big4">ファイアボム</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Fire_Bomb">
+            </ul>
+          </ul>
+        </div>
+
+        <!--緑のデスボム-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Green_Death_Bomb.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big4">緑のデスボム</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Green_Death_Bomb">
+            </ul>
+          </ul>
+        </div>
+
+        <!--窒息の雲-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Choking_Cloud.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big4">窒息の雲</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Choking_Cloud">
+            </ul>
+          </ul>
+        </div>
+
+        <!--硫黄ボム-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Sulfur_Bomb.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">3</div>
+          <div class="item box-big4">硫黄ボム</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Sulfur_Bomb">
+            </ul>
+          </ul>
+        </div>
+
+        <!--ネットスロワー-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Net_Thrower.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">3</div>
+          <div class="item box-big4">ネットスロワー</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Net_Thrower">
+            </ul>
+          </ul>
+        </div>
+
+        <!--ホースステーション-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Hose_Station.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">3</div>
+          <div class="item box-big4">ホースステーション</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Hose_Station">
+            </ul>
+          </ul>
+        </div>
+
+        <!--クレーン-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Crane.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">25</div>
+          <div class="item box-big4">クレーン</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Crane">
+            </ul>
+          </ul>
+        </div>
+
+        <!--カイト-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Kite.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">2</div>
+          <div class="item box-big4">カイト</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Kite">
+            </ul>
+          </ul>
+        </div>
+
+        <!--レンジファインダー-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-combat/Rangefinder.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">5</div>
+          <div class="item box-big4">レンジファインダー</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Rangefinder">
+            </ul>
+          </ul>
+        </div>
+
+        <!--EXOSKELTON-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/No_Image.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">4</div>
+          <div class="item box-big4">EXOSKELTON</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Exoskelton">
+            </ul>
+          </ul>
+        </div>
+
+        <!--BATTLE FAN-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/No_Image.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">BATTLE FAN</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Battle_Fan">
+            </ul>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="showcase-wrapper clearfix">
+        <h3>建築（その他）</h3>
+
+        <!--砂のベッド-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Sandbed.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">?</div>
+          <div class="item box-big4">砂のベッド</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Sandbed">
+            </ul>
+          </ul>
+        </div>
+
+        <!--ハンモック-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Hammock.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">25</div>
+          <div class="item box-big4">ハンモック</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Hammock">
+            </ul>
+          </ul>
+        </div>
+
+        <!--ベッド-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Bed.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">50</div>
+          <div class="item box-big4">ベッド</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Bed">
+            </ul>
+          </ul>
+        </div>
+
+        <!--スモールチェスト-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-other/Small_Chest.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">6</div>
+          <div class="item box-big4">スモールチェスト</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Small_Chest">
+            </ul>
+          </ul>
+        </div>
+
+        <!--中型の宝箱-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-other/Medium_Chest.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">15</div>
+          <div class="item box-big4">中型の宝箱</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Medium_Chest">
+            </ul>
+          </ul>
+        </div>
+
+        <!--大きな宝箱-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-other/Large_Chest.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big4">大きな宝箱</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Large_Chest">
+            </ul>
+          </ul>
+        </div>
+
+        <!--巨大な宝箱-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-other/Gigantic_Chest.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">5</div>
+          <div class="item box-big4">巨大な宝箱</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Gigantic_Chest">
+            </ul>
+          </ul>
+        </div>
+
+        <!--小さな水の袋-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-other/Small_Water_Bag.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">6</div>
+          <div class="item box-big4">小さな水の袋</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Small_Water_Bag">
+            </ul>
+          </ul>
+        </div>
+
+        <!--中程度の容量の液体容器-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-other/Medium_Liquid_Container.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">中程度の容量の液体容器</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Medium_Liquid_Container">
+            </ul>
+          </ul>
+        </div>
+
+        <!--大きな水の容器-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-other/Large_Water_Container.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big4">大きな水の容器</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Large_Water_Container">
+            </ul>
+          </ul>
+        </div>
+
+        <!--OBSIDIAN CANISTER-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-other/Obsidian_Canister.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">6</div>
+          <div class="item box-big4">OBSIDIAN CANISTER</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Obsidian_Canister">
+            </ul>
+          </ul>
+        </div>
+
+        <!--OBSIDIAN POT-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-other/Obsidian_Pot.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">3</div>
+          <div class="item box-big4">OBSIDIAN POT</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Obsidian_Pot">
+            </ul>
+          </ul>
+        </div>
+
+        <!--弾薬箱-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Ammo_Chest.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">弾薬箱</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Ammo_Chest">
+            </ul>
+          </ul>
+        </div>
+
+        <!--クランフラッグ-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/ClanFlag.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">25</div>
+          <div class="item box-big4">クランフラッグ</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="ClanFlag">
+            </ul>
+          </ul>
+        </div>
+
+        <!--BASKET TALL-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-other/Basket_Tall.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">40</div>
+          <div class="item box-big4">BASKET TALL</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Basket_Tall">
+            </ul>
+          </ul>
+        </div>
+
+        <!--CARPET LIGHT-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-other/Carpet_Light.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">40</div>
+          <div class="item box-big4">CARPET LIGHT</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Carpet_Light">
+            </ul>
+          </ul>
+        </div>
+
+        <!--CHAIR SIMPLE-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-other/Chair_Simple.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">40</div>
+          <div class="item box-big4">CHAIR SIMPLE</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Chair_Simple">
+            </ul>
+          </ul>
+        </div>
+
+        <!--CHAIR THRONE-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-other/Chair_Throne.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">3</div>
+          <div class="item box-big4">CHAIR THRONE</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Chair_Throne">
+            </ul>
+          </ul>
+        </div>
+
+        <!--CHAIR COMFORTABLE-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-other/Chair_Comfortable.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big4">CHAIR COMFORTABLE</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Chair_Comfortable">
+            </ul>
+          </ul>
+        </div>
+
+        <!--LAMP STANDING-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-other/Lamp_Standing.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">40</div>
+          <div class="item box-big4">LAMP STANDING</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Lamp_Standing">
+            </ul>
+          </ul>
+        </div>
+
+        <!--FIRE GOBLET-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-other/Fire_Goblet.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big4">FIRE GOBLET</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Fire_Goblet">
+            </ul>
+          </ul>
+        </div>
+
+        <!--LAMP DOUBLE HANGING-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-other/Lamp_Double_Hanging.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">40</div>
+          <div class="item box-big4">LAMP DOUBLE HANGING</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Lamp_Double_Hanging">
+            </ul>
+          </ul>
+        </div>
+
+        <!--LAMP OVERHANGING-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-other/Lamp_Overhanging.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">40</div>
+          <div class="item box-big4">LAMP OVERHANGING</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Lamp_Overhanging">
+            </ul>
+          </ul>
+        </div>
+
+        <!--TABLE-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Table.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">1</div>
+          <div class="item box-big4">TABLE</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Table">
+            </ul>
+          </ul>
+        </div>
+
+        <!--砂袋の土台-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-other/Sandbag_Wall.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">9</div>
+          <div class="item box-big4">砂袋の土台</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Sandbag_Wall">
+            </ul>
+          </ul>
+        </div>
+
+        <!--石の土台-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-other/Sandbag_Wall.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">?</div>
+          <div class="item box-big4">石の土台</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Stone_Wall">
+            </ul>
+          </ul>
+        </div>
+
+        <!--粘土の土台-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Clay_Wall.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">8</div>
+          <div class="item box-big4">粘土の土台</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Clay_Wall">
+            </ul>
+          </ul>
+        </div>
+
+        <!--CEMENT BASE-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-other/Cement_Wall_1.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">5</div>
+          <div class="item box-big4">CEMENT BASE</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Cement_Wall">
+            </ul>
+          </ul>
+        </div>
+
+        <!--軽量な木製の土台-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-other/Light_Wood_Wall.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">軽量な木製の土台</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Light_Wood_Wall">
+            </ul>
+          </ul>
+        </div>
+
+        <!--中型の木の壁-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-other/Medium_Wood_Wall.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">35</div>
+          <div class="item box-big4">中型の木の壁</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Medium_Wood_Wall">
+            </ul>
+          </ul>
+        </div>
+
+        <!--重厚な木製の土台-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-other/Heavy_Wood_Wall_1.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Tablet_icon.png" width="30" height="30">
+          </div>
+          <div class="item">10</div>
+          <div class="item box-big4">重厚な木製の土台</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Heavy_Wood_Wall_1">
+            </ul>
+          </ul>
+        </div>
+
+        <!--バリアベース-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-other/Barrier_Base.png" width="60" height="60">
+          </div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">20</div>
+          <div class="item box-big4">バリアベース</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Barrier_Base">
+            </ul>
+          </ul>
+        </div>
+
+        <!--防御用タワー-->
+        <div class="content">
+          <div class="item box-big3"><img
+              src="https://hagi-04.github.io/FFFFFF/image/construction-other/Defensive_Tower.png" width="60"
+              height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">40</div>
+          <div class="item box-big4">防御用タワー</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Defensive_Tower">
+            </ul>
+          </ul>
+        </div>
+
+        <!--RUPUのスリング-->
+        <div class="content">
+          <div class="item box-big3"><img src="https://hagi-04.github.io/FFFFFF/image/construction-other/Rupu_Sling.png"
+              width="60" height="60"></div>
+          <div class="item"><img src="https://hagi-04.github.io/FFFFFF/image/Fragment_icon.png" width="30" height="30">
+          </div>
+          <div class="item">50</div>
+          <div class="item box-big4">RUPUのスリング</div>
+          <ul class="item box-big4 ddmenu">
+            <li id="learned-num">習得済み:0</li>
+            <ul class="ddmenu-item" id="Rupu_Sling">
+            </ul>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="showcase-wrapper clearfix">
+        <h3>ウォーカー（低Tier）</h3>
+
+
+
+      </div>
+
+      <div class="showcase-wrapper clearfix">
+        <h3>ウォーカー（高Tier）</h3>
+
+
+
+      </div>
+
+      <div class="long-margin"></div>
+
+    </div>
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
